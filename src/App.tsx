@@ -77,7 +77,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white font-inter">
       {/* Demo Banner */}
-      <div className="bg-lavender text-white px-4 py-2 flex items-center justify-center text-sm border-2 border-black">
+      <div className="bg-[#C5A3E0] text-white px-4 py-2 flex items-center justify-center text-sm border-2 border-black">
         <Sparkles className="w-4 h-4 mr-2" />
         <span className="font-semibold">SOLVD AI DESIGN SYSTEM</span>
         <span className="font-normal ml-2">• Complete Pet Bio Generator</span>
@@ -101,7 +101,7 @@ export default function App() {
                 <div className="text-sm font-medium">{completionPercentage}% Complete</div>
                 <div className="w-24 h-2 bg-gray-200 rounded-md overflow-hidden mt-1 border-2 border-black">
                   <div 
-                    className="h-full bg-mint transition-all duration-500 ease-out rounded-md"
+                    className="h-full bg-[#4FB3A6] transition-all duration-500 ease-out rounded-md"
                     style={{ width: `${completionPercentage}%` }}
                   />
                 </div>
@@ -109,19 +109,19 @@ export default function App() {
               
               <div className="flex gap-2">
                 {photos.length > 0 && (
-                  <div className="bg-mint text-white border-2 border-mint text-xs px-2 py-1 rounded-sm font-medium">
+                  <div className="bg-[#4FB3A6] text-white border-2 border-[#4FB3A6] text-xs px-2 py-1 rounded-sm font-medium">
                     <Camera className="w-3 h-3 mr-1 inline" />
                     {photos.length} photo{photos.length !== 1 ? 's' : ''}
                   </div>
                 )}
                 {details.name && (
-                  <div className="bg-lavender text-white border-2 border-lavender text-xs px-2 py-1 rounded-sm font-medium">
+                  <div className="bg-[#C5A3E0] text-white border-2 border-[#C5A3E0] text-xs px-2 py-1 rounded-sm font-medium">
                     <Heart className="w-3 h-3 mr-1 inline" />
                     {details.name}
                   </div>
                 )}
                 {generatedBio && (
-                  <div className="bg-coral text-white border-2 border-coral text-xs px-2 py-1 rounded-sm font-medium">
+                  <div className="bg-[#F29E8E] text-white border-2 border-[#F29E8E] text-xs px-2 py-1 rounded-sm font-medium">
                     <Sparkles className="w-3 h-3 mr-1 inline" />
                     Bio Ready
                   </div>
@@ -153,7 +153,7 @@ export default function App() {
                       <div>
                         <label className="text-sm font-medium block mb-1">Pet Name *</label>
                         <input
-                          className="block w-full rounded-md px-2 py-2 text-base bg-white text-black border-2 border-black transition-colors duration-200 ease-in-out focus:border-mint focus:outline-none"
+                          className="block w-full rounded-md px-2 py-2 text-base bg-white text-black border-2 border-black transition-colors duration-200 ease-in-out focus:border-[#4FB3A6] focus:outline-none"
                           value={details.name}
                           onChange={(e) => setDetails({...details, name: e.target.value})}
                           placeholder="Enter pet's name"
@@ -163,7 +163,7 @@ export default function App() {
                         <div>
                           <label className="text-sm font-medium block mb-1">Age</label>
                           <input
-                            className="block w-full rounded-md px-2 py-2 text-base bg-white text-black border-2 border-black transition-colors duration-200 ease-in-out focus:border-mint focus:outline-none"
+                            className="block w-full rounded-md px-2 py-2 text-base bg-white text-black border-2 border-black transition-colors duration-200 ease-in-out focus:border-[#4FB3A6] focus:outline-none"
                             value={details.age}
                             onChange={(e) => setDetails({...details, age: e.target.value})}
                             placeholder="e.g., 2 years"
@@ -172,7 +172,7 @@ export default function App() {
                         <div>
                           <label className="text-sm font-medium block mb-1">Breed</label>
                           <input
-                            className="block w-full rounded-md px-2 py-2 text-base bg-white text-black border-2 border-black transition-colors duration-200 ease-in-out focus:border-mint focus:outline-none"
+                            className="block w-full rounded-md px-2 py-2 text-base bg-white text-black border-2 border-black transition-colors duration-200 ease-in-out focus:border-[#4FB3A6] focus:outline-none"
                             value={details.breed}
                             onChange={(e) => setDetails({...details, breed: e.target.value})}
                             placeholder="e.g., Golden Retriever"
@@ -183,7 +183,7 @@ export default function App() {
                         <div>
                           <label className="text-sm font-medium block mb-1">Size</label>
                           <select
-                            className="block w-full rounded-md px-2 py-2 text-base bg-white text-black border-2 border-black transition-colors duration-200 ease-in-out focus:border-mint focus:outline-none"
+                            className="block w-full rounded-md px-2 py-2 text-base bg-white text-black border-2 border-black transition-colors duration-200 ease-in-out focus:border-[#4FB3A6] focus:outline-none"
                             value={details.size}
                             onChange={(e) => setDetails({...details, size: e.target.value})}
                           >
@@ -196,7 +196,7 @@ export default function App() {
                         <div>
                           <label className="text-sm font-medium block mb-1">Energy Level</label>
                           <select
-                            className="block w-full rounded-md px-2 py-2 text-base bg-white text-black border-2 border-black transition-colors duration-200 ease-in-out focus:border-mint focus:outline-none"
+                            className="block w-full rounded-md px-2 py-2 text-base bg-white text-black border-2 border-black transition-colors duration-200 ease-in-out focus:border-[#4FB3A6] focus:outline-none"
                             value={details.energyLevel}
                             onChange={(e) => setDetails({...details, energyLevel: e.target.value})}
                           >
@@ -214,7 +214,7 @@ export default function App() {
                     <div>
                       <div className="flex gap-2 mb-2">
                         <input
-                          className="block flex-1 rounded-md px-2 py-2 text-base bg-white text-black border-2 border-black transition-colors duration-200 ease-in-out focus:border-mint focus:outline-none"
+                          className="block flex-1 rounded-md px-2 py-2 text-base bg-white text-black border-2 border-black transition-colors duration-200 ease-in-out focus:border-[#4FB3A6] focus:outline-none"
                           value={newQuirk}
                           onChange={(e) => setNewQuirk(e.target.value)}
                           placeholder="Add a personality trait"
@@ -222,7 +222,7 @@ export default function App() {
                         />
                         <button
                           onClick={addQuirk}
-                          className="inline-flex items-center justify-center rounded-md px-3 py-2 text-sm font-medium bg-mint text-white border-2 border-mint transition-all duration-200 ease-in-out hover:-translate-y-0.5 hover:shadow-lg hover:bg-white hover:text-black"
+                          className="inline-flex items-center justify-center rounded-md px-3 py-2 text-sm font-medium bg-[#4FB3A6] text-white border-2 border-[#4FB3A6] transition-all duration-200 ease-in-out hover:-translate-y-0.5 hover:shadow-lg hover:bg-white hover:text-black"
                         >
                           <Plus className="w-4 h-4" />
                         </button>
@@ -231,7 +231,7 @@ export default function App() {
                         {details.quirks.map((quirk, index) => (
                           <span
                             key={index}
-                            className="inline-flex items-center gap-1 bg-lavender/20 text-lavender px-2 py-1 rounded border border-lavender"
+                            className="inline-flex items-center gap-1 bg-[#C5A3E0]/20 text-lavender px-2 py-1 rounded border border-[#C5A3E0]"
                           >
                             {quirk}
                             <button
@@ -249,7 +249,7 @@ export default function App() {
                   <div className="space-y-4">
                     <h3 className="text-lg font-semibold">Special Needs</h3>
                     <textarea
-                      className="block w-full rounded-md px-2 py-2 text-base bg-white text-black border-2 border-black transition-colors duration-200 ease-in-out focus:border-mint focus:outline-none resize-none"
+                      className="block w-full rounded-md px-2 py-2 text-base bg-white text-black border-2 border-black transition-colors duration-200 ease-in-out focus:border-[#4FB3A6] focus:outline-none resize-none"
                       rows={3}
                       value={details.specialNeeds}
                       onChange={(e) => setDetails({...details, specialNeeds: e.target.value})}
@@ -269,7 +269,7 @@ export default function App() {
                   <Camera className="w-5 h-5" />
                   Pet Photos
                   {photos.length > 0 && (
-                    <div className="bg-mint text-white border-2 border-mint text-xs px-2 py-1 rounded-sm font-medium">
+                    <div className="bg-[#4FB3A6] text-white border-2 border-[#4FB3A6] text-xs px-2 py-1 rounded-sm font-medium">
                       {photos.length}
                     </div>
                   )}
@@ -284,7 +284,7 @@ export default function App() {
                   <p className="text-sm text-gray-600 mb-4 max-w-sm">
                     Drag and drop photos here, or click to browse. Multiple photos help create better bios!
                   </p>
-                  <button className="inline-flex items-center justify-center rounded-md px-4 py-2 text-base font-medium bg-mint text-white border-2 border-mint transition-all duration-200 ease-in-out hover:-translate-y-0.5 hover:shadow-lg hover:bg-white hover:text-black">
+                  <button className="inline-flex items-center justify-center rounded-md px-4 py-2 text-base font-medium bg-[#4FB3A6] text-white border-2 border-[#4FB3A6] transition-all duration-200 ease-in-out hover:-translate-y-0.5 hover:shadow-lg hover:bg-white hover:text-black">
                     <Camera className="w-4 h-4 mr-2" />
                     Choose Photos
                   </button>
@@ -315,7 +315,7 @@ export default function App() {
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg font-semibold">Generate Bio</h3>
-                    <div className="bg-mint text-white border-2 border-mint text-xs px-2 py-1 rounded-sm font-medium">
+                    <div className="bg-[#4FB3A6] text-white border-2 border-[#4FB3A6] text-xs px-2 py-1 rounded-sm font-medium">
                       <Sparkles className="w-3 h-3 mr-1 inline" />
                       AI Powered
                     </div>
@@ -333,7 +333,7 @@ export default function App() {
                     </div>
                     
                     <button
-                      className="inline-flex items-center justify-center rounded-md px-5 py-3 text-lg font-medium bg-coral text-white border-2 border-coral transition-all duration-200 ease-in-out hover:-translate-y-0.5 hover:shadow-lg hover:bg-white hover:text-black w-full disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="inline-flex items-center justify-center rounded-md px-5 py-3 text-lg font-medium bg-[#F29E8E] text-white border-2 border-[#F29E8E] transition-all duration-200 ease-in-out hover:-translate-y-0.5 hover:shadow-lg hover:bg-white hover:text-black w-full disabled:opacity-50 disabled:cursor-not-allowed"
                       onClick={generateBio}
                       disabled={!details.name}
                     >
@@ -367,19 +367,19 @@ export default function App() {
                     <div className="p-4 bg-gray-50 rounded border-2 border-gray-300">
                       <h3 className="text-xl font-bold text-coral mb-3">{generatedBio.headline}</h3>
                       <p className="text-sm leading-relaxed mb-4">{generatedBio.description}</p>
-                      <div className="p-3 bg-coral/10 rounded border border-coral">
+                      <div className="p-3 bg-[#F29E8E]/10 rounded border border-[#F29E8E]">
                         <p className="text-sm font-medium text-coral">{generatedBio.callToAction}</p>
                       </div>
                     </div>
                     
                     <div className="flex gap-2">
-                      <button className="inline-flex items-center justify-center rounded-md px-3 py-2 text-sm font-medium bg-mint text-white border-2 border-mint transition-all duration-200 ease-in-out hover:-translate-y-0.5 hover:shadow-lg hover:bg-white hover:text-black flex-1">
+                      <button className="inline-flex items-center justify-center rounded-md px-3 py-2 text-sm font-medium bg-[#4FB3A6] text-white border-2 border-[#4FB3A6] transition-all duration-200 ease-in-out hover:-translate-y-0.5 hover:shadow-lg hover:bg-white hover:text-black flex-1">
                         <Heart className="w-4 h-4 mr-1" />
                         Love This!
                       </button>
                       <button 
                         onClick={generateBio}
-                        className="inline-flex items-center justify-center rounded-md px-3 py-2 text-sm font-medium bg-white text-black border-2 border-black transition-all duration-200 ease-in-out hover:-translate-y-0.5 hover:shadow-lg hover:bg-mint hover:text-white flex-1"
+                        className="inline-flex items-center justify-center rounded-md px-3 py-2 text-sm font-medium bg-white text-black border-2 border-black transition-all duration-200 ease-in-out hover:-translate-y-0.5 hover:shadow-lg hover:bg-[#4FB3A6] hover:text-white flex-1"
                       >
                         <Sparkles className="w-4 h-4 mr-1" />
                         Regenerate
@@ -416,7 +416,7 @@ export default function App() {
                     <h3 className="text-lg font-semibold mb-4">Export Your Bio</h3>
                     
                     <div className="space-y-3">
-                      <button className="inline-flex items-center justify-center rounded-md px-4 py-3 text-base font-medium bg-white text-black border-2 border-black transition-all duration-200 ease-in-out hover:-translate-y-0.5 hover:shadow-lg hover:bg-mint hover:text-white w-full text-left">
+                      <button className="inline-flex items-center justify-center rounded-md px-4 py-3 text-base font-medium bg-white text-black border-2 border-black transition-all duration-200 ease-in-out hover:-translate-y-0.5 hover:shadow-lg hover:bg-[#4FB3A6] hover:text-white w-full text-left">
                         <div className="flex items-center justify-between w-full">
                           <div>
                             <div className="font-medium">📄 Copy Text</div>
@@ -426,7 +426,7 @@ export default function App() {
                         </div>
                       </button>
                       
-                      <button className="inline-flex items-center justify-center rounded-md px-4 py-3 text-base font-medium bg-white text-black border-2 border-black transition-all duration-200 ease-in-out hover:-translate-y-0.5 hover:shadow-lg hover:bg-lavender hover:text-white w-full text-left">
+                      <button className="inline-flex items-center justify-center rounded-md px-4 py-3 text-base font-medium bg-white text-black border-2 border-black transition-all duration-200 ease-in-out hover:-translate-y-0.5 hover:shadow-lg hover:bg-[#C5A3E0] hover:text-white w-full text-left">
                         <div className="flex items-center justify-between w-full">
                           <div>
                             <div className="font-medium">📱 Social Media</div>
@@ -436,7 +436,7 @@ export default function App() {
                         </div>
                       </button>
                       
-                      <button className="inline-flex items-center justify-center rounded-md px-4 py-3 text-base font-medium bg-white text-black border-2 border-black transition-all duration-200 ease-in-out hover:-translate-y-0.5 hover:shadow-lg hover:bg-coral hover:text-white w-full text-left">
+                      <button className="inline-flex items-center justify-center rounded-md px-4 py-3 text-base font-medium bg-white text-black border-2 border-black transition-all duration-200 ease-in-out hover:-translate-y-0.5 hover:shadow-lg hover:bg-[#F29E8E] hover:text-white w-full text-left">
                         <div className="flex items-center justify-between w-full">
                           <div>
                             <div className="font-medium">🖼️ Card Image</div>
@@ -479,7 +479,7 @@ export default function App() {
               </div>
               <div className="p-6 flex-1 overflow-auto">
                 <div className="space-y-4">
-                  <div className="p-3 bg-mint/10 rounded border border-mint">
+                  <div className="p-3 bg-[#4FB3A6]/10 rounded border border-[#4FB3A6]">
                     <h4 className="font-medium text-sm mb-2 text-mint">✨ Pro Tips</h4>
                     <ul className="text-xs text-gray-600 space-y-1">
                       <li>• Add 3-5 personality traits</li>
@@ -510,7 +510,7 @@ export default function App() {
                   </div>
                   
                   {generatedBio && (
-                    <div className="p-3 bg-coral/10 rounded border border-coral">
+                    <div className="p-3 bg-[#F29E8E]/10 rounded border border-[#F29E8E]">
                       <h4 className="font-medium text-sm mb-2 text-coral">🎉 Bio Generated!</h4>
                       <p className="text-xs text-gray-600">
                         Your bio is ready to help {details.name} find a loving home!
