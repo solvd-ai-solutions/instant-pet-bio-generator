@@ -1,17 +1,36 @@
-export default function App() {
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+
+function App() {
+  const [count, setCount] = useState(0)
+
   return (
-    <div className="h-screen w-screen flex flex-col bg-white overflow-hidden">
-      <div className="bg-lavender text-white px-4 py-2 flex items-center justify-center text-sm">
-        <span className="font-semibold">🐾 FIGMA DESIGN SYSTEM APPLIED</span>
+    <>
+      <div>
+        <a href="https://vite.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
       </div>
-      <div className="flex-1 p-4">
-        <h1>Instant Pet Bio Generator</h1>
-        <p>Now using the proper Figma design system and components</p>
-        <div className="card-base p-4 mt-4">
-          <h2>Design System Applied</h2>
-          <p className="text-muted-foreground">This now uses the exact CSS and components from your Figma export</p>
-        </div>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.tsx</code> and save to test HMR
+        </p>
       </div>
-    </div>
-  );
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
+    </>
+  )
 }
+
+export default App
+// Force deployment Wed Aug  6 11:27:39 PDT 2025
