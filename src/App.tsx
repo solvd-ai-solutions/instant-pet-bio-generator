@@ -85,7 +85,7 @@ export default function App() {
       <div className="bg-[#C5A3E0] text-white px-4 py-2 flex items-center justify-center text-sm flex-shrink-0 border-2 border-black">
         <span className="mr-2">⚡</span>
         <span className="font-semibold">DEMO VERSION</span>
-        <span className="font-normal"> • FULL PET BIO GENERATOR • ALL 5 PANELS WORKING • LIVE NOW</span>
+        <span className="font-normal"> • COMPLETE 5-PANEL GRID APP • ALL PANELS WORKING • LIVE NOW</span>
       </div>
       
       {/* Header - Solvd AI Design System */}
